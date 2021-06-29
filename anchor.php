@@ -11,10 +11,6 @@ License: GPL2
 */
 
 
-// add an 'anchor' shortcode
-add_shortcode( 'anchor_shortcode', 'anchor' );
-
-
 // the actual anchor shortcode function
 function anchor_shortcode( $atts ) {
     
@@ -24,7 +20,7 @@ function anchor_shortcode( $atts ) {
     ), $atts );
 
     // provided we have an id parameter
-    if ( $a['id'] > 0 ) {
+    if ( !empty( $a['id'] ) ) {
 
         // return the anchor
         return '<a name="' . esc_attr( $a['id'] ) . '"></a>';
@@ -32,4 +28,5 @@ function anchor_shortcode( $atts ) {
     }
 
 }
+add_shortcode( 'anchor', 'anchor_shortcode' );
 
