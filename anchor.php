@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: Anchor Shortocde
+Plugin Name: Anchor Shortcode
 Plugin URI: https://github.com/wp-pure/anchor
 Description: A dead simple plugin to create anchor tags inside your content to easily facilitate anchor links. Like so: [anchor id="my-anchor"]
 Version: 0.0.1
